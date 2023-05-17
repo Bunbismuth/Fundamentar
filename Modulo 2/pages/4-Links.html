@@ -1,0 +1,73 @@
+<!--
+    Hyperlinks - Elemento Âncora: <a>
+
+    + Anatomia
+
+    + Atributos:
+        - globais 
+        - href
+            - para onde iremos quando clicarmos no link?
+                - url completa
+                - fragmento
+                - email
+                - telefone
+                - e outros.
+        - download
+        - target
+            - _self (padrão)
+            - _blank
+-->
+
+<!-- download fará com que o usuário baixe algo ao clicar no texto-->
+<a href="" download="">Conteúdo</a>
+
+<br>
+
+<!-- O target faz com que você não saia da página atual, só abra uma nova aba com o link -->
+<!--
+    Por padrão, o target vem como self, que faz com que abra uma página na mesma
+    aba que você clicou do link, ou seja, o usuário sai da página que continha o link
+-->
+<a href="https//google.com" target="_blank">Google</a>
+
+<h3>Exemplo: </h3>
+<p>Encontre-me</p>
+<ul>
+    <li><a href="https://www.rocketseat.com.br" target="_blank">Website</a></li>
+    <li><a href="mailto:mayk@rocketseat.com.br">Email</a></li>
+    <li><a href="tel:+551998887766">Telefone</a></li>
+</ul>
+
+<!-- Agora vamos mostrar a utilização de Fragmento -->
+<h3>Exemplo 2: </h3>
+<p>Saiba mais</p>
+<ul>
+    <li><a href="#about">Sobre mim</a></li>
+    <li><a href="#history">História</a></li>
+    <li><a href="#works">Trabalhos</a></li>
+</ul>
+
+<!-- Utilizamos os fragmentos para interagir com outros componentes HTML a partir do id: -->
+<!--
+    Quando clicamos em algum dos links, somos redirecionados para a parte do site que contém
+    o id citado, por exemplo, se clicarmos em "História", o browser nos redireciona para 
+    a parte que contem o texto sobre história, que tá marcado com o id "history".
+-->
+<H1 id="about">Sobre mim</H1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Blanditiis, dolore nemo aperiam odit cupiditate consectetur, 
+voluptatum neque omnis illo explicabo excepturi? 
+Nobis aperiam possimus quibusdam corrupti exercitationem 
+saepe iste pariatur!
+
+<h2 id="history">História</h2>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+Deleniti cum necessitatibus, esse ipsum dolores facere 
+officiis doloribus quae placeat corrupti nostrum dolore 
+beatae velit hic quisquam aperiam. Quos, at nemo.
+
+<h2 id="works">Trabalhos</h2>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+Voluptas assumenda veritatis ullam molestiae, libero 
+fugiat beatae magni quis laboriosam ipsa fuga ducimus 
+unde vero mollitia ex maiores pariatur corporis. Aperiam!
